@@ -23,11 +23,10 @@
         </p>
 
         <!--
-            The form tag includes "data-netlify='true'" and a hidden input field.
-            This is the key for Netlify's form detection.
-            When you upload this file, Netlify's build process will find these attributes and activate the form.
+            The form tag includes "data-netlify='true'", a hidden input field, and an 'action' attribute
+            to redirect the user to the thank-you page after a successful submission.
         -->
-        <form name="contact" method="POST" data-netlify="true" class="space-y-6">
+        <form name="contact" method="POST" data-netlify="true" action="/thank-you.html" class="space-y-6">
             <!-- Hidden field required by Netlify to identify the form -->
             <input type="hidden" name="form-name" value="contact" />
 
